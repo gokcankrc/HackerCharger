@@ -18,6 +18,9 @@
       <sprite>sprites\spr_lazor_body</sprite>
       <sprite>sprites\spr_lazor_head</sprite>
       <sprite>sprites\spr_lazor_shoot</sprite>
+      <sprite>sprites\spr_lazer_body</sprite>
+      <sprite>sprites\spr_lazer_shoot</sprite>
+      <sprite>sprites\spr_lazer_idle</sprite>
     </sprites>
     <sprites name="blocks">
       <sprite>sprites\spr_block</sprite>
@@ -59,6 +62,7 @@
       <object>objects\obj_death</object>
       <object>objects\obj_plus</object>
       <object>objects\obj_system</object>
+      <object>objects\states</object>
     </objects>
     <objects name="Character">
       <object>objects\obj_player_placer</object>
@@ -91,7 +95,6 @@
       <object>objects\obj_lazor_head</object>
     </objects>
     <object>objects\obj_score</object>
-    <object>objects\states</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_test</room>

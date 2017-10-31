@@ -57,7 +57,7 @@
     <instance objName="obj_player_follower" x="256" y="128" name="inst_BB963BB2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_score" x="4864" y="2304" name="inst_5738513E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_score" x="3520" y="3200" name="inst_243194BD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_lazor_body" x="6784" y="2368" name="inst_80AABFC3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
+    <instance objName="obj_lazor_body" x="6720" y="2304" name="inst_80AABFC3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
     <instance objName="obj_lazor_body" x="4224" y="2368" name="inst_4443E83F" locked="0" code="image_angle = 90&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_lazor_body" x="4288" y="3200" name="inst_F834375F" locked="0" code="" scaleX="1" scaleY="-1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bounce_up" x="1664" y="4480" name="inst_BFBCAE35" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -582,7 +582,7 @@
     <instance objName="obj_killer_block" x="3200" y="3456" name="inst_CDFB268D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_killer_block" x="3200" y="3328" name="inst_B85CAF01" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_killer_turret" x="128" y="1920" name="inst_8432E1B8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_lazor_body" x="256" y="1984" name="inst_B426C174" locked="0" code="image_angle = 270&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_lazor_body" x="192" y="1920" name="inst_B426C174" locked="0" code="image_angle = 270&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_score" x="832" y="2240" name="inst_D6800A27" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_score" x="320" y="1536" name="inst_28F6F4CE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_score" x="1792" y="2112" name="inst_5CFE2407" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

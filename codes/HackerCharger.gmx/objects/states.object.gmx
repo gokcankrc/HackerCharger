@@ -31,6 +31,9 @@
 normal = 0
 destroy = 1
 slowtime = 2
+targetable = 3
+firing = 4
+onCD = 5
 
 
 </string>
