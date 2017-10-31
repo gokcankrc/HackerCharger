@@ -25,10 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed = 1/3
+            <string>
 image_angle = 90
-
-imagespeed = image_speed
+y += sprite_width
+imagespeed = 1/3
 </string>
           </argument>
         </arguments>

@@ -28,6 +28,7 @@
             <string>image_speed = 1/3
 imagespeed = image_speed
 image_angle = 270
+x += sprite_width
 </string>
           </argument>
         </arguments>

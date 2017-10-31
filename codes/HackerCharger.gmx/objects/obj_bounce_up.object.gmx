@@ -27,6 +27,8 @@
             <kind>1</kind>
             <string>image_speed = 1/3
 image_angle = 180
+x += sprite_width
+y += sprite_height
 imagespeed = image_speed
 </string>
           </argument>
