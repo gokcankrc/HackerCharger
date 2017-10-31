@@ -55,6 +55,7 @@ light = surface_create(view_xview, view_yview)
     y = obj_player.y
     }
 
+
 background_xscale = 10
 background_yscale = 10
     

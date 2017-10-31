@@ -55,6 +55,7 @@ image_angle = point_direction(x,y,mouse_x,mouse_y)
 x = obj_player.x
 y = obj_player.y
 
+
 </string>
           </argument>
         </arguments>

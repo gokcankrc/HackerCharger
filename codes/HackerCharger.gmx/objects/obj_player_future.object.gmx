@@ -25,7 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if !instance_exists(obj_player) then exit
+            <string>x=0
+y=0
+
+if !instance_exists(obj_player) then exit
 var k = global.all_var
 x = obj_player.x + obj_player.hspeed * 15 /k
 y = obj_player.y + obj_player.vspeed * 15 /k

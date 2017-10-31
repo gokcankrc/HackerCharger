@@ -27,6 +27,8 @@
             <kind>1</kind>
             <string>little = 0
 cd = 0
+image_alpha = 0
+
 </string>
           </argument>
         </arguments>
@@ -54,26 +56,35 @@ if !instance_exists(obj_player) then exit
 x = view_xview + 3072/2
 y = view_yview + 2304/2
 //little -= 0.03
-image_alpha += 0.05
+if image_alpha &lt; 1 then image_alpha += 0.04
 image_xscale = little
 image_yscale = little
+
+
+
 
 if !obj_player.slow
     {
     if cd then image_alpha -= 0.2
     cd = false
     little = 4.5
-    image_alpha -= 0.15
+    image_alpha -= 0.14
     
     }
-    
+else
+    {
+    cd = true
+    } 
+
+if image_alpha &lt;0 then image_alpha = 0
+
+
+/*
 else
     {
     if !cd then image_alpha = 0
     cd = true
     }
-if image_alpha &lt;0 then image_alpha = 0
-
 </string>
           </argument>
         </arguments>

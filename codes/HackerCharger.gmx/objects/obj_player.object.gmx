@@ -26,6 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>///create events
+
+
 slow = false
 slowtime = -1
 
@@ -34,15 +36,35 @@ global.all_var = 1
 image_speed =  global.all_var * 1/6
 
 start_speed = 20
-speed = start_speed
+spd = start_speed
+speed = spd
 acc = 1
 
 coll_with_death = false
 
 
-instance_create(x,y,obj_player_future)
 
-instance_create(x,y,obj_player_follower)
+future = instance_create(x,y,obj_player_future)
+
+follow = instance_create(x,y,obj_player_follower)
+
+blacken = instance_create(x,y,obj_blacken)
+
+cursor = instance_create(x,y,obj_cursor)
+cursor.visible = false
+
+
+
+enum states
+{
+    normal,
+    destroy,
+    slowtime
+
+}
+state = states.normal
+
+
 </string>
           </argument>
         </arguments>
@@ -65,7 +87,13 @@ instance_create(x,y,obj_player_follower)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(x,y,obj_white)
+            <string>
+
+instance_create(x,y,obj_death_effect)
+
+
+
+
 </string>
           </argument>
         </arguments>
@@ -92,92 +120,35 @@ instance_create(x,y,obj_player_follower)
 
 
 
-//collision check---------------------------------
+//collision check
+
+
 
 var coll_with_death = false
+scr_collision_check()   //checks for collision, if true then sets coll_with_death to true
 
-var mid_coll = collision_line(x, y, x + 64 * cos(direction*pi/180) + hspeed, y + 64 * sin(direction*pi/180) + vspeed,obj_block,true,true) 
-var up_coll = collision_line(x + 64 * sin(direction*pi/180), y + 64 * cos(direction*pi/180), x + 64 * sin(direction*pi/180) + hspeed, y + 64 * cos(direction*pi/180) + vspeed, obj_block,true,true)
-var down_coll = collision_line(x - 64 * sin(direction*pi/180), y - 64 * cos(direction*pi/180), x - 64 * sin(direction*pi/180) + hspeed, y - 64 * cos(direction*pi/180) + vspeed, obj_block,true,true) 
+    
 
- 
-if up_coll != noone
+
+scr_input_check()   //input check
+
+
+
+//state machine
+switch (state)
     {
-    var inst = up_coll.object_index
-    if object_is_ancestor( inst, obj_death) or object_is_ancestor( inst, obj_blockdeath) then coll_with_death = true
-    }
-if down_coll != noone
-    {
-    var inst = down_coll.object_index
-    if object_is_ancestor( inst, obj_death) or object_is_ancestor( inst, obj_blockdeath) then coll_with_death = true
-    }
-if mid_coll != noone
-    {
-    var inst = mid_coll.object_index
-    if object_is_ancestor( inst, obj_death) or object_is_ancestor( inst, obj_blockdeath) then coll_with_death = true
-    }
-
-
-    
-if coll_with_death
-    {
-    instance_create(x,y,obj_player_death)
-    
-    with(obj_cursor) {instance_destroy()}
-    instance_destroy()
-    }
-    
-    
-
-
-
-
-
-    
-
-
-
-
-
-
-
-//slowing and speeding time------------------------
-if mouse_check_button_pressed(mb_left)
-    {
-    slow = true
-    slowtime = 90
-    global.all_var = global.all_var_low
-    speed *= global.all_var
-    
-    instance_create(x,y,obj_cursor)
-    
-    }
-if mouse_check_button_released(mb_left) or slowtime = 0
-    {
-    slow = false
-    slowtime = -1
-    speed /= global.all_var
-    global.all_var = 1
-    speed += acc
-    direction = point_direction (x,y, mouse_x, mouse_y)
-    
-    instance_destroy(obj_cursor)
-    
+    case states.normal: scr_characterstate_normal(); break;
+    case states.destroy: scr_characterstate_destroy(); break;
+    case states.slowtime: scr_characterstate_slowtime(); break;
     }
 
     
-image_speed = speed / 200
-if slow
-    {
-    slowtime--
-    image_angle = point_direction(x,y,mouse_x, mouse_y)
-    image_speed = global.all_var * speed / 288
-    }
-else image_angle = direction
 
 
+speed = spd * global.all_var
 
-//hovering sprite effect---------------------------------
+
+//hovering sprite effect
 
 hover_cd -= 1 * global.all_var;
 if hover_cd &lt;= 0
@@ -219,9 +190,10 @@ if object_get_name(other.object_index) == "obj_breakable"
         image_index = 4 - hp
         if hp = 0 then instance_change(obj_breaken,true)
         }
-    show_message("hii")
     }
 move_bounce_solid(true);
+
+
 //if other.speed &lt; 25 then exit
 /*with(other)
     {

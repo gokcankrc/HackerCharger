@@ -6,32 +6,33 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\spr_blacken</sprite>
-    <sprite>sprites\spr_block</sprite>
-    <sprite>sprites\spr_bounce</sprite>
-    <sprite>sprites\spr_bounce_mid</sprite>
-    <sprite>sprites\spr_breakable</sprite>
-    <sprite>sprites\spr_cursor</sprite>
-    <sprite>sprites\spr_death</sprite>
-    <sprite>sprites\spr_HDplayer</sprite>
-    <sprite>sprites\spr_lazor</sprite>
-    <sprite>sprites\spr_lazor_active</sprite>
-    <sprite>sprites\spr_lazor_body</sprite>
-    <sprite>sprites\spr_lazor_head</sprite>
-    <sprite>sprites\spr_lazor_shoot</sprite>
-    <sprite>sprites\spr_player</sprite>
-    <sprite>sprites\spr_score</sprite>
-    <sprite>sprites\spr_slower_blue</sprite>
-    <sprite>sprites\spr_test_player</sprite>
-    <sprite>sprites\spr_tile</sprite>
-    <sprite>sprites\spr_turret_tile</sprite>
-    <sprite>sprites\spr_white</sprite>
-    <sprite>sprites\sprite0</sprite>
-    <sprite>sprites\sprite6</sprite>
-    <sprite>sprites\sprite7</sprite>
-    <sprite>sprites\sprite18</sprite>
-    <sprite>sprites\sprite19</sprite>
-    <sprite>sprites\sprite23</sprite>
+    <sprites name="character">
+      <sprite>sprites\spr_player</sprite>
+      <sprite>sprites\spr_HDplayer</sprite>
+      <sprite>sprites\spr_player_mask</sprite>
+      <sprite>sprites\spr_test_player</sprite>
+    </sprites>
+    <sprites name="lazer">
+      <sprite>sprites\spr_lazor</sprite>
+      <sprite>sprites\spr_lazor_active</sprite>
+      <sprite>sprites\spr_lazor_body</sprite>
+      <sprite>sprites\spr_lazor_head</sprite>
+      <sprite>sprites\spr_lazor_shoot</sprite>
+    </sprites>
+    <sprites name="blocks">
+      <sprite>sprites\spr_block</sprite>
+      <sprite>sprites\spr_turret_tile</sprite>
+      <sprite>sprites\spr_bounce</sprite>
+      <sprite>sprites\spr_breakable</sprite>
+      <sprite>sprites\spr_bounce_mid</sprite>
+      <sprite>sprites\spr_tile</sprite>
+    </sprites>
+    <sprites name="effects">
+      <sprite>sprites\spr_blacken</sprite>
+      <sprite>sprites\spr_score</sprite>
+      <sprite>sprites\spr_cursor</sprite>
+      <sprite>sprites\spr_white</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\background</background>
@@ -43,40 +44,53 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_lazor_angle.gml</script>
+    <scripts name="character">
+      <script>scripts\scr_input_check.gml</script>
+      <script>scripts\scr_collision_check.gml</script>
+      <script>scripts\scr_characterstate_destroy.gml</script>
+      <script>scripts\scr_characterstate_slowtime.gml</script>
+      <script>scripts\scr_characterstate_normal.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
-    <object>objects\obj_blacken</object>
-    <object>objects\obj_block</object>
-    <object>objects\obj_blockdeath</object>
-    <object>objects\obj_bounce</object>
-    <object>objects\obj_bounce_left</object>
-    <object>objects\obj_bounce_mid</object>
-    <object>objects\obj_bounce_right</object>
-    <object>objects\obj_bounce_up</object>
-    <object>objects\obj_breakable</object>
-    <object>objects\obj_breaken</object>
-    <object>objects\obj_cursor</object>
-    <object>objects\obj_death</object>
-    <object>objects\obj_empty</object>
-    <object>objects\obj_first_time</object>
-    <object>objects\obj_hover</object>
-    <object>objects\obj_killer_block</object>
-    <object>objects\obj_killer_turret</object>
-    <object>objects\obj_lazor</object>
-    <object>objects\obj_lazor_body</object>
-    <object>objects\obj_lazor_death</object>
-    <object>objects\obj_lazor_head</object>
-    <object>objects\obj_player</object>
-    <object>objects\obj_player_death</object>
-    <object>objects\obj_player_follower</object>
-    <object>objects\obj_player_future</object>
-    <object>objects\obj_player_placer</object>
-    <object>objects\obj_plus</object>
+    <objects name="system">
+      <object>objects\obj_block</object>
+      <object>objects\obj_blockdeath</object>
+      <object>objects\obj_death</object>
+      <object>objects\obj_plus</object>
+      <object>objects\obj_system</object>
+    </objects>
+    <objects name="Character">
+      <object>objects\obj_player_placer</object>
+      <object>objects\obj_player</object>
+      <object>objects\obj_player_follower</object>
+      <object>objects\obj_player_future</object>
+      <object>objects\obj_hover</object>
+      <object>objects\obj_cursor</object>
+      <object>objects\obj_death_effect</object>
+      <object>objects\obj_blacken</object>
+      <objects name="tutorial text">
+        <object>objects\obj_tutorial</object>
+      </objects>
+    </objects>
+    <objects name="blocks">
+      <object>objects\obj_bounce_left</object>
+      <object>objects\obj_bounce_right</object>
+      <object>objects\obj_bounce_up</object>
+      <object>objects\obj_bounce_mid</object>
+      <object>objects\obj_bounce</object>
+      <object>objects\obj_breakable</object>
+      <object>objects\obj_breaken</object>
+      <object>objects\obj_killer_block</object>
+    </objects>
+    <objects name="turret">
+      <object>objects\obj_killer_turret</object>
+      <object>objects\obj_lazor_body</object>
+      <object>objects\obj_lazor</object>
+      <object>objects\obj_lazor_death</object>
+      <object>objects\obj_lazor_head</object>
+    </objects>
     <object>objects\obj_score</object>
-    <object>objects\obj_system</object>
-    <object>objects\obj_tutorial</object>
-    <object>objects\obj_tutorial_2</object>
-    <object>objects\obj_white</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_test</room>

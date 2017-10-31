@@ -336,7 +336,6 @@
     <instance objName="obj_killer_block" x="512" y="0" name="inst_FE70882D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_killer_block" x="384" y="0" name="inst_526199AE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_killer_block" x="256" y="0" name="inst_3EF21BE6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_killer_block" x="128" y="0" name="inst_AA801E81" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_killer_block" x="128" y="128" name="inst_6E9E78DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_killer_block" x="256" y="128" name="inst_7F3AEEC4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_killer_block" x="384" y="128" name="inst_1014F996" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -580,7 +579,6 @@
     <instance objName="obj_killer_turret" x="128" y="1920" name="inst_8432E1B8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_lazor_body" x="256" y="1984" name="inst_B426C174" locked="0" code="image_angle = 270" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tutorial" x="2048" y="3968" name="inst_DE767F52" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_blacken" x="256" y="2048" name="inst_E5C8A3E2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bounce_up" x="4672" y="2752" name="inst_B180433A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bounce_up" x="4800" y="2752" name="inst_B70F6A4C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bounce_up" x="4928" y="2752" name="inst_33105EEB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

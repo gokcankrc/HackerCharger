@@ -74,9 +74,7 @@ if alarm_0 &lt; 0 then instance_destroy()
             <kind>1</kind>
             <string>with(other)
     {
-    instance_create(x,y,obj_player_death)
-    
-    with(obj_cursor) {instance_destroy()}
+
     instance_destroy()
     }
 </string>
