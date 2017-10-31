@@ -55,6 +55,8 @@ cursor.visible = false
 
 
 
+
+/*
 enum states
 {
     normal,
@@ -62,7 +64,10 @@ enum states
     slowtime
 
 }
+*/
 state = states.normal
+
+
 
 
 </string>

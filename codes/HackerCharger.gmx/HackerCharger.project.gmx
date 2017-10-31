@@ -91,6 +91,7 @@
       <object>objects\obj_lazor_head</object>
     </objects>
     <object>objects\obj_score</object>
+    <object>objects\states</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_test</room>
