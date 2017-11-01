@@ -93,7 +93,7 @@ state = states.normal
           <argument>
             <kind>1</kind>
             <string>
-
+instance_destroy(cursor,true)
 instance_create(x,y,obj_death_effect)
 
 
@@ -192,8 +192,8 @@ if object_get_name(other.object_index) == "obj_breakable"
     with(other)
         {
         hp--
-        image_index = 4 - hp
-        if hp = 0 then instance_change(obj_breaken,true)
+        image_index = round(3 - 3 * (hp-1)/11) //there are 4 total subimagesi maxhp is 12
+        if hp = 0 then instance_change(obj_breakable_broken,true)
         }
     }
 move_bounce_solid(true);

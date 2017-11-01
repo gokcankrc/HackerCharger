@@ -63,9 +63,6 @@
     <instance objName="obj_score" x="2944" y="3200" name="inst_243194BD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_score" x="5760" y="2176" name="inst_E0E80063" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_score" x="6400" y="1792" name="inst_DB978714" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_lazor_body" x="6784" y="2368" name="inst_80AABFC3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
-    <instance objName="obj_lazor_body" x="4224" y="2368" name="inst_4443E83F" locked="0" code="image_angle = 90&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_lazor_body" x="4288" y="3200" name="inst_F834375F" locked="0" code="" scaleX="1" scaleY="-1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bounce_up" x="1664" y="4480" name="inst_BFBCAE35" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bounce_up" x="1536" y="4480" name="inst_E0409E4C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bounce_up" x="1408" y="4480" name="inst_98223D4C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -584,9 +581,6 @@
     <instance objName="obj_killer_block" x="6912" y="1920" name="inst_ADE4BD0F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_killer_block" x="6912" y="2816" name="inst_36B37DC4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_killer_block" x="6912" y="2944" name="inst_B9654169" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_killer_turret" x="4224" y="2304" name="inst_E83F44BF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_killer_turret" x="6784" y="2304" name="inst_34C0703D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_killer_turret" x="4224" y="3072" name="inst_6B0C20A1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bounce_mid" x="3712" y="3200" name="inst_D7104EAC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_killer_block" x="2688" y="3200" name="inst_BA9611D6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_killer_block" x="2688" y="3328" name="inst_1D5136D1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -597,8 +591,6 @@
     <instance objName="obj_killer_block" x="3200" y="3584" name="inst_ED741CF9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_killer_block" x="3200" y="3456" name="inst_CDFB268D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_killer_block" x="3200" y="3328" name="inst_B85CAF01" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_killer_turret" x="128" y="1920" name="inst_8432E1B8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_lazor_body" x="256" y="1984" name="inst_B426C174" locked="0" code="image_angle = 270&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tutorial" x="2048" y="4160" name="inst_DE767F52" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>

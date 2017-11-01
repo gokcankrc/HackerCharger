@@ -26,7 +26,12 @@
           <argument>
             <kind>1</kind>
             <string>
-light = surface_create(view_xview, view_yview)
+
+{
+//light = surface_create(view_xview, view_yview)
+}
+
+
 </string>
           </argument>
         </arguments>

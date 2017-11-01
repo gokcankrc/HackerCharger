@@ -13,22 +13,21 @@
       <sprite>sprites\spr_test_player</sprite>
     </sprites>
     <sprites name="lazer">
-      <sprite>sprites\spr_lazor</sprite>
-      <sprite>sprites\spr_lazor_active</sprite>
-      <sprite>sprites\spr_lazor_body</sprite>
-      <sprite>sprites\spr_lazor_head</sprite>
-      <sprite>sprites\spr_lazor_shoot</sprite>
+      <sprite>sprites\spr_lazer_small</sprite>
+      <sprite>sprites\spr_lazer_big</sprite>
       <sprite>sprites\spr_lazer_body</sprite>
       <sprite>sprites\spr_lazer_shoot</sprite>
       <sprite>sprites\spr_lazer_idle</sprite>
+      <sprite>sprites\spr_lazer_whole</sprite>
     </sprites>
     <sprites name="blocks">
       <sprite>sprites\spr_block</sprite>
-      <sprite>sprites\spr_turret_tile</sprite>
       <sprite>sprites\spr_bounce</sprite>
-      <sprite>sprites\spr_breakable</sprite>
       <sprite>sprites\spr_bounce_mid</sprite>
       <sprite>sprites\spr_tile</sprite>
+      <sprite>sprites\spr_active_tile</sprite>
+      <sprite>sprites\spr_breakable</sprite>
+      <sprite>sprites\spr_breakable_broken</sprite>
     </sprites>
     <sprites name="effects">
       <sprite>sprites\spr_blacken</sprite>
@@ -46,13 +45,20 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\scr_lazor_angle.gml</script>
     <scripts name="character">
       <script>scripts\scr_input_check.gml</script>
       <script>scripts\scr_collision_check.gml</script>
       <script>scripts\scr_characterstate_destroy.gml</script>
       <script>scripts\scr_characterstate_slowtime.gml</script>
       <script>scripts\scr_characterstate_normal.gml</script>
+    </scripts>
+    <scripts name="lazer">
+      <script>scripts\scr_lazor_angle.gml</script>
+      <script>scripts\scr_lazerstate_untargetable.gml</script>
+      <script>scripts\scr_lazerstate_firing.gml</script>
+      <script>scripts\scr_lazerstate_onCD.gml</script>
+      <script>scripts\scr_shoot_lazer.gml</script>
+      <script>scripts\scr_targetable.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
@@ -62,7 +68,6 @@
       <object>objects\obj_death</object>
       <object>objects\obj_plus</object>
       <object>objects\obj_system</object>
-      <object>objects\states</object>
     </objects>
     <objects name="Character">
       <object>objects\obj_player_placer</object>
@@ -76,6 +81,7 @@
       <objects name="tutorial text">
         <object>objects\obj_tutorial</object>
       </objects>
+      <object>objects\obj_player_checkpoint</object>
     </objects>
     <objects name="blocks">
       <object>objects\obj_bounce_left</object>
@@ -84,22 +90,23 @@
       <object>objects\obj_bounce_mid</object>
       <object>objects\obj_bounce</object>
       <object>objects\obj_breakable</object>
-      <object>objects\obj_breaken</object>
+      <object>objects\obj_breakable_broken</object>
       <object>objects\obj_killer_block</object>
+      <object>objects\obj_block_active</object>
     </objects>
     <objects name="turret">
-      <object>objects\obj_killer_turret</object>
-      <object>objects\obj_lazor_body</object>
-      <object>objects\obj_lazor</object>
-      <object>objects\obj_lazor_death</object>
-      <object>objects\obj_lazor_head</object>
+      <object>objects\obj_lazer_head</object>
+      <object>objects\obj_lazer</object>
+      <object>objects\obj_lazer_death</object>
+      <object>objects\obj_lazer_placer</object>
     </objects>
+    <object>objects\states</object>
     <object>objects\obj_score</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_test</room>
+    <room>rooms\rm_first</room>
     <room>rooms\rm_test2</room>
-    <room>rooms\rm_tutorial</room>
+    <room>rooms\rm_test3</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

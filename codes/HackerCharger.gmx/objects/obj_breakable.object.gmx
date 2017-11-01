@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hp = 12
+            <string>hp = 10
 image_speed = 0
 </string>
           </argument>
