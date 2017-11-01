@@ -93,7 +93,7 @@ state = states.normal
           <argument>
             <kind>1</kind>
             <string>
-instance_destroy(cursor,true)
+with(cursor){instance_destroy()}
 instance_create(x,y,obj_death_effect)
 
 
@@ -261,5 +261,8 @@ draw_set_colour(c_white);
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
-  <PhysicsShapePoints/>
+  <PhysicsShapePoints>
+    <point>285,132</point>
+    <point>186,186</point>
+  </PhysicsShapePoints>
 </object>

@@ -4,11 +4,16 @@
     <option_aborterrors>false</option_aborterrors>
     <option_android_GPU_device>0</option_android_GPU_device>
     <option_android_adcolony_ads>false</option_android_adcolony_ads>
+    <option_android_adcolony_enable_V4VC>false</option_android_adcolony_enable_V4VC>
     <option_android_advertising_enable>false</option_android_advertising_enable>
     <option_android_advertising_key></option_android_advertising_key>
     <option_android_advertising_type>MoPub</option_android_advertising_type>
     <option_android_amazon_ads>false</option_android_amazon_ads>
     <option_android_amazon_game_circle>false</option_android_amazon_game_circle>
+    <option_android_amazon_gc_achievements>true</option_android_amazon_gc_achievements>
+    <option_android_amazon_gc_leaderboards>true</option_android_amazon_gc_leaderboards>
+    <option_android_amazon_gc_whispersync>false</option_android_amazon_gc_whispersync>
+    <option_android_amazon_iap>false</option_android_amazon_iap>
     <option_android_apk_expansion>false</option_android_apk_expansion>
     <option_android_arch_armv5>true</option_android_arch_armv5>
     <option_android_arch_armv7>true</option_android_arch_armv7>
@@ -25,6 +30,8 @@
     <option_android_facebook_appid></option_android_facebook_appid>
     <option_android_facebook_enable>false</option_android_facebook_enable>
     <option_android_flurry_analytics>false</option_android_flurry_analytics>
+    <option_android_flurry_enable>false</option_android_flurry_enable>
+    <option_android_flurry_id></option_android_flurry_id>
     <option_android_google_analytics>false</option_android_google_analytics>
     <option_android_google_analytics_enable>false</option_android_google_analytics_enable>
     <option_android_google_mobile_ads>false</option_android_google_mobile_ads>
@@ -32,7 +39,12 @@
     <option_android_google_play_cloud_save_enable>false</option_android_google_play_cloud_save_enable>
     <option_android_google_play_id></option_android_google_play_id>
     <option_android_google_tracking_id></option_android_google_tracking_id>
+    <option_android_iap_suppress_toast>false</option_android_iap_suppress_toast>
     <option_android_icade_support>true</option_android_icade_support>
+    <option_android_icon_170>Configs\Default\android\icons\icon170.png</option_android_icon_170>
+    <option_android_icon_36>Configs\Default\android\icons\icon36.png</option_android_icon_36>
+    <option_android_icon_48>Configs\Default\android\icons\icon48.png</option_android_icon_48>
+    <option_android_icon_72>Configs\Default\android\icons\icon72.png</option_android_icon_72>
     <option_android_icon_hdpi>Configs\Default\android\icons\icon_hdpi.png</option_android_icon_hdpi>
     <option_android_icon_ldpi>Configs\Default\android\icons\icon_ldpi.png</option_android_icon_ldpi>
     <option_android_icon_mdpi>Configs\Default\android\icons\icon_mdpi.png</option_android_icon_mdpi>
@@ -60,6 +72,9 @@
     <option_android_package_domain>com</option_android_package_domain>
     <option_android_package_product>HackerCharger</option_android_package_product>
     <option_android_permission_flags>8</option_android_permission_flags>
+    <option_android_pocketchange_enable>false</option_android_pocketchange_enable>
+    <option_android_pocketchange_id></option_android_pocketchange_id>
+    <option_android_pocketchange_test_enable>false</option_android_pocketchange_test_enable>
     <option_android_portrait_splash_png>Configs\Default\android\portrait_splash.png</option_android_portrait_splash_png>
     <option_android_push_enable>false</option_android_push_enable>
     <option_android_push_id></option_android_push_id>
@@ -224,6 +239,7 @@
     <option_fullscreen>false</option_fullscreen>
     <option_gameguid>{608E9565-167A-40F6-844D-DF58E76B945D}</option_gameguid>
     <option_gameid>680571139</option_gameid>
+    <option_haptic_effects>false</option_haptic_effects>
     <option_hasloadimage>false</option_hasloadimage>
     <option_helpkey>true</option_helpkey>
     <option_html5_CreationEventOrder>true</option_html5_CreationEventOrder>
@@ -260,7 +276,9 @@
     <option_html5_usebuiltinparticles>true</option_html5_usebuiltinparticles>
     <option_html5_usesplash>false</option_html5_usesplash>
     <option_icon>nil</option_icon>
+    <option_in_app_purchase_enable>false</option_in_app_purchase_enable>
     <option_in_app_purchase_sandbox_mode>false</option_in_app_purchase_sandbox_mode>
+    <option_in_app_purchase_server_url></option_in_app_purchase_server_url>
     <option_information></option_information>
     <option_interpolate>true</option_interpolate>
     <option_ios_adcolony_enable_V4VC>false</option_ios_adcolony_enable_V4VC>

@@ -52,6 +52,7 @@ x += sprite_width
           <argument>
             <kind>1</kind>
             <string>image_speed = imagespeed * global.all_var
+
 </string>
           </argument>
         </arguments>
@@ -69,5 +70,8 @@ x += sprite_width
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
-  <PhysicsShapePoints/>
+  <PhysicsShapePoints>
+    <point>0,0</point>
+    <point>64,64</point>
+  </PhysicsShapePoints>
 </object>

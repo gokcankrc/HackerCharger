@@ -4,7 +4,7 @@
 if coll_with_death //kills the player
     {
     
-    instance_destroy(cursor,true)
+    with(cursor){instance_destroy()}
     instance_destroy()
     }
     

@@ -13,7 +13,6 @@
   <code></code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
-  <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>0</isSet>
     <w>0</w>
@@ -55,7 +54,7 @@
     <instance objName="obj_player" x="1672" y="4092" name="inst_CD53CD39" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_player_checkpoint" x="320" y="256" name="inst_10DD11FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_player_follower" x="384" y="256" name="inst_E95EA749" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player_future" x="512" y="320" name="inst_B55789DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_killer_block" x="3648" y="4160" name="inst_09A2835C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_score" x="5120" y="1664" name="inst_5738513E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_score" x="768" y="2048" name="inst_BAF648E3" locked="0" code="is_finish = true&#xA;" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_score" x="896" y="256" name="inst_4544910E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -572,7 +571,7 @@
     <instance objName="obj_killer_block" x="3200" y="3584" name="inst_ED741CF9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_killer_block" x="3200" y="3456" name="inst_CDFB268D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_killer_block" x="3200" y="3328" name="inst_B85CAF01" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_tutorial" x="2048" y="3968" name="inst_DE767F52" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_killer_block" x="3520" y="4160" name="inst_1FBCB00E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_score" x="3840" y="2368" name="inst_4B5FDDF0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_breakable" x="4458" y="520" name="inst_5797E7D0" locked="0" code="" scaleX="1.33000004291534" scaleY="1" colour="4294967295" rotation="90"/>
     <instance objName="obj_bounce_right" x="0" y="4352" name="inst_F4461410" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -703,8 +702,6 @@
     <instance objName="obj_lazer_placer" x="256" y="2048" name="inst_7F1F3C58" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_lazer_placer" x="4224" y="2560" name="inst_DFF968F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="180"/>
     <instance objName="obj_killer_block" x="3776" y="4160" name="inst_8183AE45" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_killer_block" x="3648" y="4160" name="inst_09A2835C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_killer_block" x="3520" y="4160" name="inst_1FBCB00E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
