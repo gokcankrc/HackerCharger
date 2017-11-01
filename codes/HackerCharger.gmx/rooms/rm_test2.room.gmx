@@ -702,6 +702,9 @@
     <instance objName="obj_lazer_placer" x="6784" y="2304" name="inst_EAF88AAA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="180"/>
     <instance objName="obj_lazer_placer" x="256" y="2048" name="inst_7F1F3C58" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_lazer_placer" x="4224" y="2560" name="inst_DFF968F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="180"/>
+    <instance objName="obj_killer_block" x="3776" y="4160" name="inst_8183AE45" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_killer_block" x="3648" y="4160" name="inst_09A2835C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_killer_block" x="3520" y="4160" name="inst_1FBCB00E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
