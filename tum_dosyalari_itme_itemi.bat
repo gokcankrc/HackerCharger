@@ -1,4 +1,5 @@
 cd C:\Users\GOKCAN\Desktop\Hacker Charger
+git status
 git add --all
 git commit -m "hotfix, the prev commit was slightly wrong"
 git push origin master
