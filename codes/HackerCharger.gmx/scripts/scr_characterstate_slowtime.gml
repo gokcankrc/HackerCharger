@@ -1,4 +1,5 @@
-
+audio_em_slow_out = audio_emitter_create();
+audio_emitter_pitch(audio_em_slow_out, random_range( .98 , 1.02 ));
 
 if mouse_left_released or slowtime = 0
     {
@@ -13,7 +14,7 @@ if mouse_left_released or slowtime = 0
     cursor.visible = false
     
     
-    
+    audio_play_sound_on( audio_em_slow_out , slow_out  , false , 11 );
     state = states.normal
     }
     

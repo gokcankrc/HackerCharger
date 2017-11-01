@@ -17,12 +17,15 @@ var deg = direction*pi/180
 var mid_coll = collision_circle(x + hspeed, y + vspeed, r, obj_block, true, true)
 
 audio_em_bounce = audio_emitter_create();
-audio_emitter_pitch(audio_em_bounce, random_range( .5 , 1.5 ));
+audio_emitter_pitch(audio_em_bounce, random_range( .92 , 1.08 ));
 
 if mid_coll != noone//checks if the mid_coll kills the player.
     {
     var inst = mid_coll.object_index
-    if object_is_ancestor( inst, obj_blockdeath)then coll_with_death = true 
+    if object_is_ancestor( inst, obj_blockdeath){
+        coll_with_death = true
+        audio_play_sound_on( audio_em_bounce , death , false , 11 );
+    }
     else audio_play_sound_on( audio_em_bounce , bounce , false , 10 );
     
     }
@@ -36,14 +39,20 @@ else//think as if dir = 15. these are to check if there are some corners missed 
         {
         
         var inst = up_coll.object_index
-        if object_is_ancestor( inst, obj_death) or object_is_ancestor( inst, obj_blockdeath) then coll_with_death = true 
+        if object_is_ancestor( inst, obj_death) or object_is_ancestor( inst, obj_blockdeath){
+            coll_with_death = true
+            audio_play_sound_on( audio_em_bounce , death , false , 11 ); 
+        }
         else audio_play_sound_on( audio_em_bounce , bounce , false , 10 );
         }
     if down_coll != noone
         {
        
         var inst = down_coll.object_index
-        if object_is_ancestor( inst, obj_death) or object_is_ancestor( inst, obj_blockdeath) then coll_with_death = true 
+        if object_is_ancestor( inst, obj_death) or object_is_ancestor( inst, obj_blockdeath){
+            coll_with_death = true
+            audio_play_sound_on( audio_em_bounce , death , false , 11 ); 
+        }
         else audio_play_sound_on( audio_em_bounce , bounce , false , 10 );
         }
     }

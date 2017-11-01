@@ -93,5 +93,8 @@ visible = true
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
-  <PhysicsShapePoints/>
+  <PhysicsShapePoints>
+    <point>256,455</point>
+    <point>256,256</point>
+  </PhysicsShapePoints>
 </object>

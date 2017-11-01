@@ -7,6 +7,13 @@
   <sounds name="sound">
     <sound>sound\bounce</sound>
     <sound>sound\pickup1</sound>
+    <sound>sound\pickup2</sound>
+    <sound>sound\pickup3</sound>
+    <sound>sound\pickup4</sound>
+    <sound>sound\death</sound>
+    <sound>sound\slow_in</sound>
+    <sound>sound\slow_out</sound>
+    <sound>sound\background_music</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="character">

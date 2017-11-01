@@ -74,7 +74,7 @@ is_finish = false
           <argument>
             <kind>1</kind>
             <string>score++
-audio_play_sound(pickup1, 10, false);
+audio_play_sound(choose(pickup1,pickup2,pickup3,pickup4), 10, false);
 if is_finish 
     {
     obj_player.speed =  global.all_var
