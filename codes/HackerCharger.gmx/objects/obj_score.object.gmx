@@ -74,6 +74,7 @@ is_finish = false
           <argument>
             <kind>1</kind>
             <string>score++
+other.spd -= other.acc
 if is_finish 
     {
     obj_player.speed =  global.all_var

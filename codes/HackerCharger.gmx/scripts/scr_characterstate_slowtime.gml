@@ -27,6 +27,7 @@ if coll_with_death = true then
     global.all_var = 1
     state = states.destroy
     }
+scr_coll_with_changer()
 
 
 

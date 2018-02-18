@@ -25,7 +25,35 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hspeed = 4
+            <string>hspeed = 0//4
+scale = 1
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if room_get_name(room) = "rm_test3" then {x=7700;y=2800}
+if global.all_var !=0 and room_get_name(room) != "rm_gistfinish"  then scale -= 0.02
+if scale &lt;0 then instance_destroy()
+
+
 </string>
           </argument>
         </arguments>
@@ -50,7 +78,23 @@
             <kind>1</kind>
             <string>
 draw_set_color(c_white)
-draw_text_transformed(x, y, "HOLD MOUSE BUTTON TO SLOW DOWN TIME, R TO RESTART##" + "GET FASTER AS YOU CHANGE DIRECTIONS", 6, 6, 0)
+//draw_text_transformed(x-600-scale*1000, y-300-scale*200, "HOLD MOUSE BUTTON TO SLOW DOWN TIME, R TO RESTART##" + "         GET FASTER AS YOU CHANGE DIRECTIONS", 4*scale, 4*scale, 0)
+if room_get_name(room) = "rm_test2"
+    {
+    draw_text_transformed(x-600-scale*1000, y-300-scale*200, "HOLD MOUSE BUTTON TO SLOW DOWN TIME, R TO RESTART##" + "         GET FASTER AS YOU CHANGE DIRECTIONS", 4*scale, 4*scale, 0)
+    }
+else if room_get_name(room) = "rm_test3"
+    {
+    draw_text_transformed(x-600-scale*1000, y-300-scale*200, "Oh also the papers slow you down a bit.## You'll need that in this room.", 4*scale, 4*scale, 0)
+    }
+else if room_get_name(room) = "rm_gistfinish"
+    {
+    draw_set_font(font0)
+    draw_text_transformed(x+300-scale*1000, y-300-scale*200, 
+    "Oynadığınız için teşekkür ederiz." + 
+    "##Gelişmelerden haberdar olmak için mail listemize girebilir," + 
+    "##bize destek olmak için bağış yapabilirsiniz.", 1*scale, 1*scale, 0)
+    }
 draw_set_color(c_white)
 </string>
           </argument>

@@ -37,19 +37,19 @@ image_speed =  global.all_var * 1/6
 
 start_speed = 20
 spd = start_speed
-speed = spd
+speed = 0
 acc = 1
 
 coll_with_death = false
 
+state = states.stopped
 
 
+
+instance_create(x,y,obj_blacken_atfirst)
 future = instance_create(x,y,obj_player_future)
-
 follow = instance_create(x,y,obj_player_follower)
-
 blacken = instance_create(x,y,obj_blacken)
-
 cursor = instance_create(x,y,obj_cursor)
 cursor.visible = false
 
@@ -65,7 +65,7 @@ enum states
 
 }
 */
-state = states.normal
+
 
 
 
@@ -104,6 +104,29 @@ instance_create(x,y,obj_death_effect)
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>room_restart()
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -129,13 +152,13 @@ instance_create(x,y,obj_death_effect)
 
 
 
-var coll_with_death = false
-scr_collision_check()   //checks for collision, if true then sets coll_with_death to true
+var coll_with_death = false;
+scr_collision_check();   //checks for collision, if true then sets coll_with_death to true
 
     
 
 
-scr_input_check()   //input check
+scr_input_check();   //input check
 
 
 
@@ -145,6 +168,7 @@ switch (state)
     case states.normal: scr_characterstate_normal(); break;
     case states.destroy: scr_characterstate_destroy(); break;
     case states.slowtime: scr_characterstate_slowtime(); break;
+    case states.stopped: scr_characterstate_stopped(); break;
     }
 
     
@@ -193,7 +217,24 @@ if object_get_name(other.object_index) == "obj_breakable"
         {
         hp--
         image_index = round(3 - 3 * (hp-1)/11) //there are 4 total subimagesi maxhp is 12
-        if hp = 0 then instance_change(obj_breakable_broken,true)
+        if hp = 0
+            {
+            instance_change(obj_breakable_broken,true)
+            other.speed -= 3* other.acc;
+            }
+        }
+    }
+if object_get_name(other.object_index) == "obj_breakable_thin"
+    {
+    with(other)
+        {
+        hp--
+        image_index = 1 //there are 4 total subimagesi maxhp is 12
+        if hp = 0 
+            {
+            other.speed -= 3* other.acc;
+            instance_change(obj_breakable_thin_broken,true)
+            }
         }
     }
 move_bounce_solid(true);

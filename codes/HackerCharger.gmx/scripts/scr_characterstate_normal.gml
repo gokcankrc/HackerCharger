@@ -27,6 +27,8 @@ image_angle = direction
 
 
 
-if coll_with_death = true then state = states.destroy
+if coll_with_death = true then state = states.destroy;
+scr_coll_with_changer();
+
 
 

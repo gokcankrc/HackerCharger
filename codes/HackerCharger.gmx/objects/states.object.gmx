@@ -34,6 +34,7 @@ slowtime = 2
 firing = 3
 onCD = 4
 untargetable = 5
+stopped = 6
 
 
 </string>

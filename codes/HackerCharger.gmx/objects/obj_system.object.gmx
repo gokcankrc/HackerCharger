@@ -80,7 +80,7 @@ window_set_fullscreen(true)
           </argument>
           <argument>
             <kind>1</kind>
-            <string>Score: </string>
+            <string>Consciousness: </string>
           </argument>
         </arguments>
       </action>
