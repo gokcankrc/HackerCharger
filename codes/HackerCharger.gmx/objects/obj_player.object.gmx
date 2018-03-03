@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>-10</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -46,12 +46,13 @@ state = states.stopped
 
 
 
-instance_create(x,y,obj_blacken_atfirst)
+blacken_atfirst = instance_create(x,y,obj_blacken_atfirst)
 future = instance_create(x,y,obj_player_future)
 follow = instance_create(x,y,obj_player_follower)
 blacken = instance_create(x,y,obj_blacken)
 cursor = instance_create(x,y,obj_cursor)
 cursor.visible = false
+//checkpoint = instance_create(x,y,obj_player_checkpoint)
 
 
 
@@ -93,9 +94,27 @@ enum states
           <argument>
             <kind>1</kind>
             <string>
-instance_destroy(cursor,true)
+with(future)
+    {
+    instance_destroy()
+    }
+with(follow)
+    {
+    instance_destroy()
+    }
+with(blacken)
+    {
+    instance_destroy()
+    }
+with(cursor)
+    {
+    instance_destroy()
+    }
+with(blacken_atfirst)
+    {
+    instance_destroy()
+    }
 instance_create(x,y,obj_death_effect)
-
 
 
 
@@ -121,7 +140,7 @@ instance_create(x,y,obj_death_effect)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_restart()
+            <string>scr_room_restart()
 </string>
           </argument>
         </arguments>

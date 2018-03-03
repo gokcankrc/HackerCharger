@@ -4,7 +4,6 @@
 
 
 
-
 if scr_targetable()//nothing inbetween, change to state onCD for brief moment
     {
     state = states.onCD;

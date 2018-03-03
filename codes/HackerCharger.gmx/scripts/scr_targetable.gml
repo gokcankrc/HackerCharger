@@ -1,4 +1,4 @@
-
+if player_is_dead = 1 then return 0;
 
 
 //checks if player is in range

@@ -51,11 +51,7 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_system" x="768" y="384" name="inst_170407F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player_checkpoint" x="640" y="256" name="inst_E66A70DF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player_future" x="512" y="384" name="inst_83B98B96" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player" x="7936" y="2560" name="inst_C647C850" locked="0" code="direction = 180&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="180"/>
-    <instance objName="obj_room_changer" x="8192" y="2560" name="inst_C2F391C5" locked="0" code="target_rm = rm_test3to2&#xA;target_dir = 0&#xA;&#xA;&#xA;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="180"/>
+    <instance objName="obj_room_changer" x="8192" y="2560" name="inst_C2F391C5" locked="0" code="target_rm = rm_test2&#xA;target_x = 512&#xA;target_y = 2432&#xA;target_dir = 0" scaleX="1" scaleY="1" colour="4294967295" rotation="180"/>
     <instance objName="obj_killer_block" x="8192" y="2176" name="inst_16458434" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_killer_block" x="8064" y="2176" name="inst_3FB09410" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_killer_block" x="8064" y="2816" name="inst_1FA041C9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -28,6 +28,20 @@
             <string>global.all_var = 1
 global.all_var_low = 1/7
 window_set_fullscreen(true)
+/*
+statistic_total_clicks
+statistic_room_clicks
+statistic_life_clicks
+statistic_total_clicks
+statistic_total_pages
+statistic_room_pages
+statistic_life_pages
+ARRAY
+statistics[,]
+        total   room   room_min   life   
+page
+click
+*/
 
 
 </string>

@@ -72,10 +72,15 @@ instance_create(x - lengthdir_x(128/2, start_rot), y - lengthdir_y(128/2, start_
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>if instance_exists(obj_player) then player_is_dead = 0 else player_is_dead = 1;
 //it is easy to have 2 rotration values in hand
-rot = point_direction(x,y,obj_player_future.x,obj_player_future.y)
-dir_to_player = point_direction(x,y, obj_player_follower.x, obj_player_follower.y)
+if player_is_dead = 0
+    {
+    rot = point_direction(x,y,obj_player_future.x,obj_player_future.y)
+    dir_to_player = point_direction(x,y, obj_player_follower.x, obj_player_follower.y)
+    }
+
+
 
 //acts depending on state
 switch (state)

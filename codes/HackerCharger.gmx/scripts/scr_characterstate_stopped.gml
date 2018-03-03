@@ -14,7 +14,7 @@ if mouse_left_pressed
 image_speed = 0 //speed / 200
 image_angle = direction
 
-if coll_with_death = true then state = states.destroy;
+
 scr_coll_with_changer();
 
 

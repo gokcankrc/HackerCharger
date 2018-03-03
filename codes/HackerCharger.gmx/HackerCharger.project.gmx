@@ -25,6 +25,7 @@
       <sprite>sprites\spr_bounce</sprite>
       <sprite>sprites\spr_bounce_mid</sprite>
       <sprite>sprites\spr_tile</sprite>
+      <sprite>sprites\spr_tile_fade</sprite>
       <sprite>sprites\spr_active_tile</sprite>
       <sprite>sprites\spr_breakable</sprite>
       <sprite>sprites\spr_breakable_broken</sprite>
@@ -38,6 +39,12 @@
       <sprite>sprites\spr_white</sprite>
     </sprites>
     <sprite>sprites\spr_room_changer</sprite>
+    <sprite>sprites\spr_editor_block</sprite>
+    <sprite>sprites\spr_editor_bouncer_right</sprite>
+    <sprite>sprites\spr_editor_bouncer_up</sprite>
+    <sprite>sprites\spr_editor_bouncer_left</sprite>
+    <sprite>sprites\spr_editor_bouncer_down</sprite>
+    <sprite>sprites\spr_editor_bouncer_mid</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background</background>
@@ -55,6 +62,7 @@
       <script>scripts\scr_characterstate_slowtime.gml</script>
       <script>scripts\scr_characterstate_normal.gml</script>
       <script>scripts\scr_characterstate_stopped.gml</script>
+      <script>scripts\scr_coll_with_changer.gml</script>
     </scripts>
     <scripts name="lazer">
       <script>scripts\scr_lazor_angle.gml</script>
@@ -64,7 +72,7 @@
       <script>scripts\scr_shoot_lazer.gml</script>
       <script>scripts\scr_targetable.gml</script>
     </scripts>
-    <script>scripts\scr_coll_with_changer.gml</script>
+    <script>scripts\scr_room_restart.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font0</font>
@@ -78,7 +86,7 @@
       <object>objects\obj_system</object>
     </objects>
     <objects name="Character">
-      <object>objects\obj_player_placer</object>
+      <object>objects\obj_player_checkpoint</object>
       <object>objects\obj_player</object>
       <object>objects\obj_player_follower</object>
       <object>objects\obj_player_future</object>
@@ -90,7 +98,6 @@
       <objects name="tutorial text">
         <object>objects\obj_tutorial</object>
       </objects>
-      <object>objects\obj_player_checkpoint</object>
     </objects>
     <objects name="blocks">
       <object>objects\obj_bounce_left</object>
@@ -100,7 +107,6 @@
       <object>objects\obj_bounce</object>
       <object>objects\obj_breakable</object>
       <object>objects\obj_breakable_broken</object>
-      <object>objects\object34</object>
       <object>objects\obj_breakable_thin</object>
       <object>objects\obj_breakable_thin_broken</object>
       <object>objects\obj_killer_block</object>
@@ -119,9 +125,7 @@
   <rooms name="rooms">
     <room>rooms\rm_first</room>
     <room>rooms\rm_test2</room>
-    <room>rooms\rm_test3to2</room>
     <room>rooms\rm_test3</room>
-    <room>rooms\rm_test4to2</room>
     <room>rooms\rm_test4</room>
     <room>rooms\rm_gistfinish</room>
   </rooms>
