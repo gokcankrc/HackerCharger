@@ -28,6 +28,8 @@
             <string>global.all_var = 1
 global.all_var_low = 1/7
 window_set_fullscreen(true)
+
+display_reset(2, true);
 /*
 statistic_total_clicks
 statistic_room_clicks

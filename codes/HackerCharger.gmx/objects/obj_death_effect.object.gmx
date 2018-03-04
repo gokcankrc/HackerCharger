@@ -51,7 +51,7 @@ alarm[0]=130
           <argument>
             <kind>1</kind>
             <string>
-room_restart()
+scr_room_restart()
 
 
 </string>
